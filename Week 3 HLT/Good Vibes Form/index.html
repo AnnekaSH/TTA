@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</header>
+
+<body>
+  <main>
+    <h1 id="title">Good Vibes Form</h1>
+
+  </main>
+
+  <p>Tell us something positive that happened to you</p>
+<!--Inserted an image to make the form more appealing with an alt tag-->
+  <img src="img1.png" alt="fingers with happy faces">
+
+<!--specify where the form will be submitted to and used POST to send data to a server -->  
+  <form action="results.html" method="POST">
+
+<!--divided up the different parts of the form with <div> text input with name and a placeholder. This field is required so an error message will display if no data is entered. Also used <br> so it would be on the next line-->    
+    <div>
+      <label for="Name">Name</label>
+      <input type="text" name="Name" id="Name" placeholder="Enter your name here" required>
+    </div><br>
+
+<!--space to enter email with placeholder. This is also a required part of the form. An error message will be displated if an email address is not entered correctly or not completed -->    
+    <div>
+      <label for="Email">Email</label>
+      <input type="email" name="Email" id="Email" placeholder="Enter your email address here" required>
+    </div> <br>
+
+<!--telephone input with placeholder to enter a phone number. oly numerical characters can be entered. This field is not required-->
+    <div>
+      <label for="phone">What is your phone number? </label>
+      <input type="tel" name="phone" id="phone" placeholder="Enter your phone number here">
+    </div> <br>
+
+<!--number input for age. this field is not required. I have specified a min and max age that is able to be chosen-->
+    <div>
+      <label for="age">What is your age?</label>
+      <input type="number" name="age" id="age" min="1" max="150"> 
+    </div> <br>
+
+<!--date input to allow the user to input the date-->  
+    <div>
+      <label for="Date">What date did the positive thing happen on?</label>
+      <input type="date" name="Date" id="Date">
+    </div> <br>
+
+<!--radio buttons to select the time of day that the postive event happened. due to the input type only one selection can be made-->    
+    <div class="time">
+     <label for="time of day">When did it happen?</label><br>  
+     <input type="radio" name="time of day" id="Morning">
+     <label for="Morning">Morning</label><br>
+      <input type="radio" name="time of day" id="Afternoon">
+      <label for="Afternoon">Afternoon</label><br>
+      <input type="radio" name="time of day" id="Evening"> 
+      <label for="Evening">Evening</label>
+    </div> <br>
+
+<!--<select> to create a dropdown menu of locations that the positive thing could have occured. ALso provided a textbox for user to type an alternative location if it is not on the drop-dwn menu -->    
+    <div>
+      <label for="location">Where did it occur?</label>
+      <select>name="location" id="location"> multiple>
+        <option value ="home">At home</option>
+        <option value="work">At work</option>
+        <option value="park">At the park</option>
+        <option value="shops">At the shops</option>
+        <option value="cafe">At the cafe</option>
+        <option value="street">On the street</option>
+        <option value="other">Other (please specify)</option>
+      </select>
+       <input type="text" name="location" id="location" placeholder="If other selected please specify where" required>
+
+    </div> <br>
+
+<!--input type checkbox so users can select as many options that they want from the ones provided-->    
+    <div>
+      <label for="emotions" >What emotions did you experience?(Select all that apply)</label><br>
+      <input type="checkbox" name="Happy" id="Happy">
+      <label for="Happy">Happy</label><br>
+      <input type="checkbox" name="Impressed" id="Impressed">
+      <label for="Impressed">Impressed</label><br>
+      <input type="checkbox" name="Amused" id="Amused">
+      <label for="Amused">Amused</label><br>
+      <input type="checkbox" name="Grateful" id="Grateful">
+      <label for="Grateful">Grateful</label><br>
+      <input type="checkbox" name="Loved" id="Loved">
+      <label for="Loved">Loved</label><br>
+      <input type="checkbox" name="Appreciated" id="Appreciated">
+      <label for="Appreciated">Appreciated</label>  
+    </div> <br>
+
+<!--textarea rather than text so users are able to desribe their experience in plenty of detail. They are also able to press enter to create a new line-->    
+    <div>
+      <label for="description"> Please describe your positive experience</label>
+      <textarea id="description" name="description" placeholder="Enter your experience here"></textarea> 
+    </div> <br>
+
+<!--provided 2 buttons. One to submit the form and another to reset the form back to default -->    
+   <button type="submit">Submit</button>
+   <button type="reset">Reset form</button>
+
+  </form>  
+
+</body>
+
+</html>
