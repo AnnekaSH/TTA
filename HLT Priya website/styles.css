@@ -1,0 +1,175 @@
+
+/*chsnged the background colour of all pages*/
+body{
+    background-color: rgb(61, 33, 184);
+}
+
+/*style navigation bar of all pages*/
+.nav {
+    width: 100%;
+    background-color: white;
+    color:black;
+    overflow: auto;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+/*style links on nav*/
+.nav a{
+    float:left;
+    padding: 12px;
+    color:black;
+    text-decoration:none;
+    font-size: 20px;
+    width: 18%;
+    text-align: center;
+
+}
+
+/*background to nav options will change to black when you hovor your mouse over it*/
+.nav a:hover{
+    background-color: black;
+}
+
+/*links change to black when click on them*/
+.nav a:active{
+    color:black
+}
+
+/*style header*/
+h1{
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left:5%;
+}
+
+/*style text on about page so that it is to the left of the page*/
+.main {
+    float:left;
+    width: 65%;
+    padding-left: 5%;
+    box-sizing: border-box;
+    line-height: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*style image on about page so that it is to the right of the page*/
+.side {
+    float: right;
+    width: 30%;
+    box-sizing: border-box;
+
+}
+
+/*centred video clip and set width*/
+.clip{
+    margin: auto;
+    width:50%;
+    
+}
+
+/*changed font for credits and line height*/
+.credit{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1em;
+    margin:auto;
+    width: 50%;
+
+}
+
+/*changed font and other properties for the whole table/logo wall*/
+.logoWall{
+    font-family:Arial, Helvetica, sans-serif;
+    margin:auto;
+    width: 80%;
+    box-sizing:border-box;
+    text-align: center;
+    border: 1px dotted;
+    font-size: 15px;
+    
+
+}
+
+/*styled the data in the rows and added a border to the bottom of the rows*/
+.logoWall td{
+    border-bottom: 1px dotted grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/*changed the font of the form*/
+.Enquire {
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+/*changed the font of the text above the form*/
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5%;
+}
+
+form {
+    width:auto;
+    margin:auto;
+    box-sizing: border-box;
+    width: 50%;
+    
+}
+
+/*changed the size of the text box and prevented it from being resized manually*/
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+     border: 2px solid #ccc;
+     border-radius: 4px;
+     background-color: #f8f8f8;
+     resize: none;
+}
+
+
+/*changed the width of the text and email boxes*/
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+/*as above*/  
+  input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }  
+
+  /*changed the stying of the submit and reset button*/
+button{
+    color:black;
+    background-color: white;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/*amended the styling of the text on the contact me page and moved to the left*/
+.contact{
+    float:left;
+    width: 65%;
+    box-sizing: border-box;
+    line-height: 2em;
+    padding-left:5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*changed size of the image and moved to the left of the page*/
+.priya {
+    float: right;
+    width: 30%;
+    box-sizing: border-box;
+}

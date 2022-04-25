@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <!--link to css file and text on tab-->
+    <head>
+        <link rel="stylesheet" href="styles.css"> 
+        <title>&#x1F4F2 Enquire - Priya </title>
+
+        <nav class="nav">
+
+            
+            <a href="Priya.html" target="_blank">PRIYA</a>
+            <a href="work.html"target="_blank">WORK</a>
+            <a href="Clients.html" target="_blank">CLIENTS</a>
+            <a href="form.html" target="_blank">ENQUIRE</a>
+            <a href="contact.html" target="_blank">CONTACT</a> 
+                
+    
+        </nav>
+
+    </head>
+    <!--header for enquiry form-->
+    <body class="Enquire">
+        <main>
+            <h1>Enquiry form</h1>
+        </main>
+
+        <p>Fill out as much as you can and Priya will get in contact with you</p>
+
+        <form action="results.html" method="POST">
+
+            <!--name, email and phone fields. name and email is a required field-->
+            <div>
+                <label for="Name">Name</label>
+                <input type="text" name="Name" id="Name" placeholder="Enter your name here" required>
+              </div><br>
+
+            <div>
+                <label for="Email">Email</label>
+                <input type="email" name="Email" id="Email" placeholder="Enter your email address here" required>
+            </div> <br>  
+
+            <div>
+                <label for="phone">What is your phone number? </label>
+                <input type="tel" name="phone" id="phone" placeholder="Enter your phone number here">
+            </div> <br>
+
+            <!--radio buttons for type of service -only one can be selected. also provided a text box for 'other'-->
+            <div class="service">
+                <label for="type of service">What type of service do you require?</label><br>  
+                <input type="radio" name="type of service" id="Development">
+                <label for="Development">Development</label><br>
+                 <input type="radio" name="type of service" id="Production">
+                 <label for="Production">Production</label><br>
+                 <input type="radio" name="type of service" id="Other"> 
+                 <label for="Other">Other</label>
+                 <input type="text" name="location" id="location" placeholder="If other selected please specify the type">
+            </div> <br>
+
+            <!--check boxes for type of media output required-->
+            <div>
+                <label for="media" >What media output do you require? (Select all that apply)</label><br>
+                <input type="checkbox" name="Online" id="Online">
+                <label for="Online">Online</label><br>
+                <input type="checkbox" name="TV" id="TV">
+                <label for="TV">TV</label><br>
+                <input type="checkbox" name="Print" id="Print">
+                <label for="Print">Print</label><br>
+                <input type="checkbox" name="Other" id="Other">
+                <label for="Other">Other</label>
+                <input type="text" name="location" id="location" placeholder="If other selected please specify which media">
+                
+            </div> <br>   
+
+            <!--dropdown options for budget with 'other' text box provided-->
+            <div>
+                <label for="budget">What is the project budget?</label>
+                <select>name="budget" id="budget"> multiple>
+                  <option value ="£10k-£50k">£10k-£50k</option>
+                  <option value="£50k-£100k">£50k-£100k</option>
+                  <option value="£100k +">£100k +</option>
+                  <option value="other">Other</option>
+                </select>
+                 <input type="text" name="budget" id="budget" placeholder="If other selected please specify how much">
+          
+              </div> <br>
+
+              <!--date selector for deadline and project live date-->
+              <div>
+                <label for="deadline">What is the project deadline?</label>
+                <input type="date" name="deadline" id="deadline">
+              </div> <br>
+
+              <div>
+                <label for="goLive">What is the project live date?</label>
+                <input type="date" name="goLive" id="goLive">
+              </div> <br>
+
+             <!--textarea so that a more detailed brief for the project can be given--> 
+              <div>
+                <label for="brief"> Please describe the project brief, including any further information and comments</label>
+                <textarea id="brief" name="brief" placeholder="Describe the project brief here"></textarea> 
+              </div> <br>
+
+              <!--people enquiring are able to upload any files to support the brief-->
+              <div>
+                  <label for="file">Please upload any documents to support your brief</label>
+                  <input id="file" type="file" name="file">
+                  <form action="results.html" method="GET" enctype="multipart/form-data"></form>
+              </div> <br>
+
+              <!--submit button and reset buttons THESE ARE CURRENTLY NOT WORKING AND I CANNOT SEE WHY-->
+              <button type="submit">Submit</button>
+              <button type="reset">Reset form</button>
+
+        </form>
+      
+    
+    </body>
+
+
+</html>
