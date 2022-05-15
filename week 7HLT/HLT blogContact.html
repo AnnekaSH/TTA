@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <script src="Javascript/blog.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <!--NAVIGATION BAR-->
+    <nav class="navBar">
+      <a href="HLT blog.html" target="_blank">Main Blog</a>
+      <a href="HLT blogContact.html" target="_blank">Contact Us</a>
+    </nav>
+#
+<!--BUTTON TO SWITCH BETWEEN LIGHT AND DARK MODE-->
+    <button class="mode" type="submit" onclick="lightDarkMode()">Light/Dark mode</button>
+
+
+  </head>
+
+  <body>
+
+    <p>Please use the form below to drop us an email</p>
+
+    <!--IT DIDN'T WORK ADDING THE ACTION HERE. IT ONLY FILLED THE SUBKECT OF THE EMAIL ON THE LINK <form action="mailto:someone.@example.com" method="post" enctype="text/plain">-->
+
+      <!--FORM TO SUBMIT EMAIL-->
+    <form>
+    <label for="subject">Subject</label>
+    <input type="text" name="subject" id="subject" placeholder="Enter subject of email" required> <br>
+
+    <label for="email"> Email</label>
+    <textarea id="email" name="email" placeholder="Enter the body of the email here"></textarea><br>
+
+    <!--<input type="submit" value="Send">-->
+    
+    <!--LINK TO EMAIL HOWEVER I CAN'T SEEM TO GET THE SUBJECT AND BODY TO POPULATE.-->
+    <a href="mailto:someone@example.com"+ subject=${subject.value} + body=${email.value} target="_top">Send mail!</a>
+
+    </form>
+
+  </body>
+</html>

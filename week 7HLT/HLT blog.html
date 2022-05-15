@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Main Blog</title>
+    <script src="Javascript/blog.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <!--NAVIGATION BAR - CONSISTENT WITH BOTH PAGES-->
+    <nav class="navBar">
+      <a href="HLT blog.html" target="_blank">Main Blog</a>
+      <a href="HLT blogContact.html" target="_blank">Contact Us</a>
+    </nav>
+
+    <!--tried a dropdown navigation
+      <div class="dropdown">
+      <button class="dropbtn">Navigation
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="HLT blog.html" target="_blank">Main Blog</a>
+        <a href="HLT blogContact.html" target="_blank">Contact Us</a>
+      </div>-->
+
+    <!--BUTTON TO SWITCH BETWEEN LIGHT AND DARK MODE-->  
+    <button class= "mode" type="submit" onclick="lightDarkMode()">Light/Dark mode</button>
+  </head>
+
+  <body>
+
+    <h1>Henrietta Lacks, HeLa cells and the controversial way they were obtained... </h1>
+
+    <h3>By Anneka Shial</h3>
+
+
+    <p> Henrietta Lacks was an African-American woman born on August 1st 1920 whose cancer cells are the source of the HeLa 'immortal' cell line.
+        On January 29th 1951 she went to John Hopkins Hospital due to a ‘knot’ in her stomach and a biopsy was taken from her cervix where she was misdiagnosed with malignant epidermoid carcinoma of the cervix.
+        When she was treated, two samples were taken from her cervix without her permission – one healthy and one cancerous. The samples were given to George Otto Gey and the cells from the cancerous sample eventually became known as HeLa cells.
+        Henrietta was admitted back to hospital on August 8th 1951 due to severe abdominal pain and received blood transfusions until her death on October 4th 1951 as the cancer had metastasized throughout her entire body. <br><br>
+        HeLa cells are the most widely used huamn cell line in biological research and have been critical for many biomedical breakthrough's.
+        When Henrietta's cells were taken without her consent they were given to a Physician George Otto Grey. He observed that her cancers cells were different to normal ones in that they reproduced at a very high rate (rather than dividing a few times then dying off).
+        HeLa cells were the first human cells to be successfully cloned in 1953 by Theodore Puck and Philip I. Marcus at the University of Colorado, Denver. Since that time, HeLa cells have "continually been used for research into cancer, AIDS, the effects of radiation and toxic substances, gene mapping, and countless other scientific pursuits.
+        1954, Jonas Salk was using HeLa cells in his research to develop the polio vaccine. To test his new vaccine, the cells were mass-produced in the first-ever cell production factory.
+        Chester M. Southam, a leading virologist, injected HeLa cells into cancer patients, prison inmates, and healthy individuals in order to observe whether cancer could be transmitted as well as to examine if one could become immune to cancer by developing an acquired immune response.
+        In 1953, a lab mistake involving mixing HeLa cells with the wrong liquid allowed researchers to see and count each chromosome clearly in the HeLa cells they were working with for the first time. The accidental discovery led scientists Joe Hin Tjio and Albert Levan to develop better techniques for staining and counting chromosomes.They were the first to accurately describe that humans have 23 pairs of chromosomes rather than 24, as was previously believed. This was important for the study of developmental disorders such as Downs Syndrome that involved the number of chromosomes.<br><br>
+
+        The main problem with HeLa cells is that they were obtained without the permission and consent of Henrietta Lacks or her family. The cells were used in medical research and for commerical purposes, so some companies were profitting from Henrietta Lacks's cells.
+        The Lacks family objected to researchers publishing the DNA sequence of the genome of a strain of HeLa cells in 2013 as this genetic information was available for public access.
+        There is now a change in the ethical ground-rules in the USA covering the taking and use of hospital biopsies without informed consent.
+        Henrietta Lacks and her cell line has now been recognised for the contribution to biomedical research and is celebrated by various Medical Universities as well as the World Health Organisation.
+      </p>
+
+      <!--<h1 id=output></h1>
+      <h3 id=output></h3>
+      <p id=output></p>-->
+
+      <!--NEW DIV FOR NEW  BLOG ENTRY-->
+      <div id="newDiv">
+        
+      </div>
+
+      <h4>Submit a new blog entry:</h4>
+<!--FORM TO SUBMIT NEW BLOG ENTRY-->
+      <form class="newBlog" onsubmit="return submit_form()">
+
+        <label for="">Blog Title</label>
+        <input type="text" id="title" placeholder="Write the title of your blog here" required><br><br>
+
+        <label for="">Author</label>
+        <input type="text" id="author" placeholder="Write your full name here" required><br><br>
+
+        <label for="">Blog</label>
+        <textarea id="blogSubmit" placeholder="Write your blog entry in this box" required></textarea><br><br>
+
+        <button id = newEntry() type="submit">Add new blog entry</button>
+
+        </form>
+
+
+
+
+  </body>
+</html>
